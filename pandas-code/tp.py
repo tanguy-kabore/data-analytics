@@ -7,8 +7,9 @@ students = {
 }
 
 df = pd.DataFrame(students)
-
-print(df)
+print("-----------------Utilitares------------------------")
+print(df.tail(2))
+#print(df)
 
 breakpoint()
 print("-----------------END------------------------")
@@ -19,6 +20,7 @@ print("-----------------------------------------")
 print(df.iloc[0:2,0:2])
 print("-----------------------------------------")
 print(type((df["note"] > 10) & (df["note"] < 20)))
+print(type((df["note"] > 10) & (df["age"] < 20)))
 #print(pd.DataFrame((df["note"] > 10) & (df["age"] < 20)))
 print(df.loc[(df["note"] > 10) & (df["age"] < 20), ["nom","note"]])
 #df1 = pd.DataFrame()
@@ -32,9 +34,9 @@ print("-----------------------------------------")
 df1 = df.set_index("note")
 #print(df1.loc["KABORE", "age"])
 print("-----------------------------------------")
-print(df1.loc[15, "age"])
+print(df1.loc[15, "note"])
 
-#breakpoint()
+
 
 serie_nom = df["nom"]
 serie_nom_note = df[["nom","note","age"]]
@@ -45,3 +47,5 @@ print(serie_nom_note)
 print(df)
 print(students)
 print(type(students))
+
+
