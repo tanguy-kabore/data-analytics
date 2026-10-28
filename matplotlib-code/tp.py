@@ -9,7 +9,7 @@ axis1[0].plot(months,sales1,color="blue")
 axis1[1].plot(months,sales)
 axis1
 
-#plt.show()
+plt.show()
 print(axis1)
 """ print(Vente)
 print(Vente)
