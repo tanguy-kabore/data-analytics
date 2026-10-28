@@ -19,13 +19,13 @@ req2 = text("""
     FROM clients
     WHERE YEAR(date_naissance_client) < '2000'
 """)
-df1 = pd.read_sql(req1, con=connexion)
+""" df1 = pd.read_sql(req1, con=connexion)
 df2 = pd.read_sql(req2, con=connexion)
 print("----------------DF1-------------------")
 print(df1)
 df1.to_csv("clients.csv", sep=';',index=False )
 print("----------------DF2-------------------")
-print(df2)
+print(df2) """
 
 """ clt1 = {
     "nom_client": "SANON",
